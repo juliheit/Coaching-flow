@@ -2,11 +2,27 @@
 node_modules/
 dist/
 .env
+.env.local
+.env.*.local
 
 # Rust/Cargo
 target/
 Cargo.lock
 
+# Soroban/Stellar - CLAVES PRIVADAS
+**/*.toml
+.soroban/
+identity/
+
 # Sistema
 .DS_Store
 *.log
+*~
+.vscode/
+.idea/
+
+# Archivos sensibles
+*.key
+*.pem
+secret*
+private*
